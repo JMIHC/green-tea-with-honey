@@ -1,4 +1,5 @@
 import type { Route } from "./+types/home";
+import InstagramFeed from "../components/InstagramFeed";
 
 export function meta({}: Route.MetaArgs) {
   return [

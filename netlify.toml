@@ -1,23 +1,11 @@
 [build]
-command = "npm run build"
+command = "react-router build"
 publish = "build/client"
 
-[functions]
-directory = ".netlify/functions-internal"
-included_files = ["build/server/**"]
-
-[[redirects]]
-from = "/*"
-to = "/.netlify/functions/handler"
-status = 200
-
 [dev]
-command = "npm run dev"
-framework = "vite"
-
-# Set immutable caching for static files, because they have fingerprinted filenames
+command = "react-router dev"
 
 [[headers]]
 for = "/assets/*"
-[headers.values]
-"Cache-Control" = "public, max-age=31560000, immutable"
+  [headers.values]
+  Cache-Control = "public, max-age=31560000, immutable"
