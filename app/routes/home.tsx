@@ -1,10 +1,11 @@
 import type { Route } from "./+types/home";
 import InstagramFeed from "../components/InstagramFeed";
+import logo from "../assets/brand/logo.svg";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Lucifer portfolio" },
-    { name: "description", content: "Luci's portfolio" },
+    { title: "Luci" },
+    { name: "description", content: "Luci" },
   ];
 }
 
@@ -16,8 +17,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
   return (
     <div className="min-h-screen bg-white text-black p-16">
       <header className="mb-16">
-        <h1 className="text-6xl font-black uppercase tracking-tight leading-none mb-4">Lucifer</h1>
-        <p className="text-sm uppercase tracking-widest">Portfolio</p>
+        <img src={logo} alt="Luci" className="w-full max-w-2xl mb-4" />
       </header>
       
       <main className="max-w-4xl">
@@ -29,7 +29,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         </section>
         
         <section className="mb-12">
-          <h2 className="text-xs uppercase tracking-widest mb-4 font-normal">Portfolio</h2>
+          <h2 className="text-xs uppercase tracking-widest mb-4 font-normal">Work</h2>
           <ul className="space-y-2">
             <li className="text-base">Project One</li>
             <li className="text-base">Project Two</li>
