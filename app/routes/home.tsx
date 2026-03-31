@@ -15,10 +15,11 @@ export function loader({ context }: Route.LoaderArgs) {
 
 export default function Home({ loaderData }: Route.ComponentProps) {
   return (
-    <div className="min-h-screen bg-white text-black p-16">
+    <div className="min-h-screen bg-white text-black">
       <header className="mb-16">
-        <img src={logo} alt="Luci" className="w-full max-w-2xl mb-4" />
+        <img src={logo} alt="Luci" className="w-full max-w-4xl" />
       </header>
+      <div className="p-16">
       
       <main className="max-w-4xl">
         <section className="mb-12">
@@ -42,6 +43,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           <p className="text-base font-light">hello@example.com</p>
         </section>
       </main>
+      </div>
     </div>
   )
 }
