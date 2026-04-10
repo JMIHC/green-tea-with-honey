@@ -40,7 +40,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         
         <section>
           <h2 className="text-xs uppercase tracking-widest mb-4 font-normal">Contact</h2>
-          <p className="text-base font-light">hello@example.com</p>
+          <a href="mailto:luciart222@gmail.com" className="text-base font-light">luciart222@gmail.com</a>
         </section>
       </main>
       </div>
